@@ -34,15 +34,23 @@ function App() {
     .catch(err => console.log('There was an error', err))
   }
 
+  const deleteSmurf = id => {
+    axios.delete(`http://localhost:3333/smurfs/${id}`)
+    .then(res => {
+      console.log('Successful deletion', res)
+      setSmurfs(res.data)
+    })
+    .catch(err => console.log('failed to remove due to error', err))
+  }
+
   return (
-    <SmurfContext.Provider value={{ smurfs, addNewSmurf }}>
+    <SmurfContext.Provider value={{ smurfs, addNewSmurf, deleteSmurf }}>
       <div className="App">
         <h1>SMURFS! 2.0 W/ Context</h1>
         
         <SmurfForm />
         
         <SmurfList />
-        
       </div>
     </SmurfContext.Provider>
   );
