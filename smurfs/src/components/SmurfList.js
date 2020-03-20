@@ -7,7 +7,7 @@ const SmurfList = () => {
     //console.log('smurfs in smurflist.js', smurfs)
 
     return (
-        <div>
+        <div className="smurf-container">
             {smurfs.map(smurf => {
                 return (
                     <Smurf 

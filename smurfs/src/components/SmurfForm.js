@@ -31,7 +31,7 @@ const SmurfForm = () => {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <label>Name</label>
+                <label>Name:</label>
                 <input 
                     id="name"
                     type="text"
@@ -40,7 +40,7 @@ const SmurfForm = () => {
                     onChange={handleChanges}
                 />
 
-                <label>Age</label>
+                <label>Age:</label>
                 <input 
                     id="age"
                     type="number"
@@ -49,7 +49,7 @@ const SmurfForm = () => {
                     onChange={handleChanges}
                 />
                 
-                <label>Height</label>
+                <label>Height:</label>
                 <input 
                     id="height"
                     type="text"

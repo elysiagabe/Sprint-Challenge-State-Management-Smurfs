@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import { SmurfContext } from '../contexts/SmurfContext';
 
 const Smurf = ({ smurf }) => {
-    console.log('a smurf:', smurf)
+    //console.log('a smurf:', smurf)
     const { deleteSmurf, updateName } = useContext(SmurfContext);
     
     const [newName, setNewName] = useState();
@@ -10,7 +10,7 @@ const Smurf = ({ smurf }) => {
 
     const handleChanges = e => {
         setNewName(e.target.value)
-        console.log({newName})
+        //console.log({newName})
     }
 
     const handleUpdateName = e => {
@@ -20,15 +20,15 @@ const Smurf = ({ smurf }) => {
     }
 
     return (
-        <div>
+        <div className="smurf-card">
             
             {!isEditing ? (
-                <div>
+                <div className="smurf-name">
                     <h2>{smurf.name}</h2>
-                    <button onClick={() => setIsEditing(true)}>Edit Name</button>
+                    <button onClick={() => setIsEditing(true)}>Edit</button>
                 </div>
             ) : (
-                <div>
+                <div className="height">
                     <input 
                         type="text"
                         name="newName"
@@ -36,7 +36,7 @@ const Smurf = ({ smurf }) => {
                         value={newName}
                         onChange={handleChanges}
                     />
-                    <button onClick={handleUpdateName}>Update Name</button>
+                    <button onClick={handleUpdateName}>Update</button>
                 </div>
             )}
             
