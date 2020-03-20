@@ -1,3 +1,72 @@
 .App {
   text-align: center;
 }
+
+h1 {
+  color: #3DACE2;
+}
+
+button {
+  border: none;
+  background-color: #3DACE2;
+  color: white;
+  padding: 4px 8px;
+  border: 2px solid #3DACE2;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  border: 2px solid #3DACE2;
+  border-radius: 4px;
+  color: #3DACE2;
+  background-color: white;
+}
+
+label {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-right: 4px;
+}
+
+input {
+  margin-right: 20px;
+  padding: 4px;
+}
+
+.smurf-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.smurf-card {
+  border: 2px solid #3DACE2;
+  border-radius: 4px;
+  width: 22%;
+  padding-bottom: 20px;
+  margin: 20px 0;
+}
+
+.smurf-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.height {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.smurf-name h2 {
+  color: #3DACE2;
+  margin-right: 8px;
+}
