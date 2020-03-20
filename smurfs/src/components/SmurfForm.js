@@ -11,7 +11,7 @@ const SmurfForm = () => {
     });
 
     const handleChanges = e => {
-        console.log(smurf)
+        //console.log(smurf)
         setSmurf({
             ...smurf,
             [e.target.name]: e.target.value
@@ -30,7 +30,7 @@ const SmurfForm = () => {
 
     return (
         <div>
-            <form onSubmit={handleSubmit}> {/* add onSubmit */}
+            <form onSubmit={handleSubmit}>
                 <label>Name</label>
                 <input 
                     id="name"
